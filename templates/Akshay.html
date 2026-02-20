@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>{% block title %}
+    Akshay
+  {% endblock title %}</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+{% block style %}
+{% endblock style %}
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="static/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+
+  <style>
+    .nav-menu li.Request a {
+    color: #fff;
+    background: #f82249;
+    padding: 7px 22px;
+    border-radius: 50px;
+    border: 2px solid #f82249;
+    transition: all ease-in-out 0.3s;
+    font-weight: 500;
+    margin-left: 8px;
+    margin-top: 2px;
+    line-height: 1;
+    font-size: 13px;
+}
+
+.nav-menu li.Request a:hover {
+    background: none;
+}
+
+.nav-menu li.Request:hover a:before,
+.nav-menu li.Request.menu-active a:before {
+visibility: hidden;
+}
+  </style>
+ 
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+
+        <a href="/Akshay" class="scrollto"><img src="../static/images/Akshay/1.png"></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="{% block home %}
+          {% endblock home %}"><a href="/Akshay">Product</a></li>
+         
+ <li><a href="/Akshay">Services</a></li>
+ <li><a href="/Akshay">Clients</a></li>
+ <li><a href="/Akshay">About</a></li>
+ <li><a href="/Ak_Cont">Contact</a></li>
+ 
+          <li class="Request"><a href="/Ak_Cont">Request a Demo </a></li>
+           
+        
+ 
+ <li><a href="/Akshay">Search</a></li>
+       
+    
+          
+          
+   
+
+   
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Intro Section ======= -->
+ <section id="intro1">
+    <div class="intro1-container">
+
+      <div class="row">
+         <div class="col-md-3"><h2>TEST1</h2></div> 
+        <div class="col-md-4">
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nesciunt tempora quos, debitis veritatis amet ipsum. Esse, veritatis, autem aut nam repudiandae eum perspiciatis incidunt repellendus optio dolorum facilis odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iure necessitatibus architecto laborum explicabo! Sed error illo optio porro? Accusamus excepturi dolorum magnam, voluptas nesciunt deserunt minus debitis in repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eaque, expedita est dicta reiciendis harum dolorum minima, nemo distinctio earum vitae voluptatum, mollitia facilis delectus molestias fugiat nisi quae magni. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima deleniti maiores quae ad adipisci aspernatur ducimus ratione magnam amet necessitatibus labore quo quaerat impedit rerum repudiandae eveniet, optio ipsam totam.</p>
+
+        </div>
+        <div class="col-md-2"><h2>Test3</h2></div>
+        <div class="col-md-3"><h2>Test4</h2></div>
+      </div>
+    </div>
+  </section><!-- End Intro Section -->
+  <main id="main">
+
+
+  {% block body %}
+  
+{% with messages=get_flashed_messages(with_categories=true) %}
+{% if messages %}
+{% for category, message in messages %}
+
+<div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
+    {{message}}
+
+
+</div>
+
+
+  {% endfor %}
+  {% endif %}
+  {% endwith %}
+  {% endblock body %}
+
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+  <script src="static/assets/vendor/venobox/venobox.min.js"></script>
+  <script src="static/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="static/assets/vendor/superfish/superfish.min.js"></script>
+  <script src="static/assets/vendor/hoverIntent/hoverIntent.js"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  
+
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>

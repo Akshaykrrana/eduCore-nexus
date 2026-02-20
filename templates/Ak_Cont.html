@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>{% block title %}
+    Akshay
+  {% endblock title %}</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+{% block style %}
+{% endblock style %}
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="static/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+
+  <style>
+    .nav-menu li.Request a {
+    color: #fff;
+    background: #f82249;
+    padding: 7px 22px;
+    border-radius: 50px;
+    border: 2px solid #f82249;
+    transition: all ease-in-out 0.3s;
+    font-weight: 500;
+    margin-left: 8px;
+    margin-top: 2px;
+    line-height: 1;
+    font-size: 13px;
+}
+
+.nav-menu li.Request a:hover {
+    background: none;
+}
+
+.nav-menu li.Request:hover a:before,
+.nav-menu li.Request.menu-active a:before {
+visibility: hidden;
+}
+  </style>
+ 
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+
+        <a href="/Akshay" class="scrollto"><img src="../static/images/Akshay/1.png"></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="{% block home %}
+          {% endblock home %}"><a href="/Akshay">Product</a></li>
+         
+ <li><a href="/Akshay">Services</a></li>
+ <li><a href="/Akshay">Clients</a></li>
+ <li><a href="/Akshay">About</a></li>
+ <li><a href="/Ak_Cont">Contact</a></li>
+ 
+          <li class="Request"><a href="/Ak_Cont">Request a Demo </a></li>
+           
+        
+ 
+ <li><a href="/Akshay">Search</a></li>
+       
+    
+          
+          
+   
+
+   
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Intro Section ======= -->
+ <section id="intro1">
+    <div class="intro1-container">
+
+      <div class="row">
+       <div class="col-md-6">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.441724837682!2d77.50491271543248!3d13.071167716220824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae2323690209b1%3A0xc249f2f09699b607!2sGeleyara%20Balaga%20Layout%2C%20Jalahalli%20West%2C%20Bengaluru%2C%20Karnataka%20560090!5e0!3m2!1sen!2sin!4v1648446289134!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+       <div class="col-md-6">
+          <h1>Our Address</h1>
+          <p></p>        
+      </div>
+     </div>
+    </div>
+  </section><!-- End Intro Section -->
+  <main id="main">
+
+
+  {% block body %}
+  
+{% with messages=get_flashed_messages(with_categories=true) %}
+{% if messages %}
+{% for category, message in messages %}
+
+<div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
+    {{message}}
+
+
+</div>
+
+
+  {% endfor %}
+  {% endif %}
+  {% endwith %}
+  {% endblock body %}
+
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+  <script src="static/assets/vendor/venobox/venobox.min.js"></script>
+  <script src="static/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="static/assets/vendor/superfish/superfish.min.js"></script>
+  <script src="static/assets/vendor/hoverIntent/hoverIntent.js"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  
+
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>
